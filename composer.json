@@ -1,0 +1,27 @@
+{
+    "name": "exportcomments/exportcomments-php",
+    "type": "library",
+    "description": "Official PHP client for the ExportComments API.",
+    "keywords": ["export comments", "social media", "comments", "php"],
+    "license": "MIT",
+    "homepage": "https://exportcomments.com",
+    "authors": [
+        {
+            "name": "ExportComments",
+            "email": "support@exportcomments.com",
+            "homepage": "https://exportcomments.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/exportcomments/exportcomments-php",
+        "issues": "https://github.com/exportcomments/exportcomments-php/issues"
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExportComments\\": "src/"
+        }
+    }
+}
