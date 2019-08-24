@@ -46,7 +46,7 @@ var_dump($res);
 
 // Check export by uniqueId
 $uniqueId = 'dfd6a2f2-5579-421f-96ac-98993d0edea1';
-$res = $export->exports->createExport($uniqueId);
+$res = $export->exports->checkExport($uniqueId);
 var_dump($res);
 
 
