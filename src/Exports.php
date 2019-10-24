@@ -35,8 +35,9 @@ class Exports extends Request {
         if ($data['twitterType'] !== null) {
             $params['twitterType'] = $data['twitterType'];
         }
+        $url = $url . '?' . http_build_query($params);
         try {
-            list($response, $header) = $this->make_request($url, 'POST', $params);
+            list($response, $header) = $this->make_request($url, 'POST');
         } catch (ExportCommentsException $ex) {
             throw $ex;
         }
