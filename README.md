@@ -82,8 +82,6 @@ Response
 }
 ```
 
-````
-
 Checking export status
 
 ```php
@@ -92,7 +90,7 @@ $uniqueId = 'dfd6a2f2-5579-421f-96ac-98993d0edea1';
 $res = $export->exports->checkExport($uniqueId);
 var_dump($res);
 
-````
+```
 
 Response
 
@@ -166,4 +164,8 @@ Response
     "rawUrl": String
   }
 ]
+```
+
+```
+
 ```
