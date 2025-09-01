@@ -1,0 +1,9 @@
+.php_cs.cache
+phpunit.xml
+composer.lock
+composer.phar
+vendor/*
+.phpunit.result.cache
+.phpunit.cache/
+tests/_output/
+coverage/

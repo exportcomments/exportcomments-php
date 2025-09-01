@@ -1,0 +1,54 @@
+{
+    "name": "exportcomments/exportcomments-php",
+    "type": "library",
+    "description": "Official PHP client for the ExportComments API. Export Social Media Comments from your PHP apps.",
+    "keywords": ["export", "comments", "social media", "api", "php", "client", "sdk"],
+    "license": "MIT",
+    "homepage": "https://exportcomments.com",
+    "authors": [
+        {
+            "name": "ExportComments",
+            "email": "support@exportcomments.com",
+            "homepage": "https://exportcomments.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/exportcomments/exportcomments-php",
+        "issues": "https://github.com/exportcomments/exportcomments-php/issues",
+        "docs": "https://github.com/exportcomments/exportcomments-php/blob/main/README.md"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0 || ^10.0",
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpstan/phpstan": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExportComments\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ExportComments\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs-check": "phpcs --standard=PSR12 src/",
+        "cs-fix": "phpcbf --standard=PSR12 src/",
+        "analyse": "phpstan analyse src/ --level=5"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
